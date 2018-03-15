@@ -2,7 +2,7 @@
 This is my first flask app
 
 requirements:
-Flask==0.12.2	
+Flask==0.12.2
 Flask-Migrate==2.1.1
 Flask-PyMongo==0.5.1
 Flask-SQLAlchemy==2.3.2
