@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Search{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/search.css') }}">
+{% endblock %}
+
+{% block main %}
+    <h1 class="page-title">welcome to search page</h1>
+
+    <div class="form-container">
+        <form method="post" action="/search" class="navbar-form navbar-left">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="userInput">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+
+{% endblock %}
+{##}
+{#{% extends 'base.html' %}#}
+{##}
+{#{% block title %}Search{% endblock %}#}
+{##}
+{#{% block main %}#}
+{#    <h1 class="page-title">welcome to search page</h1>#}
+{#    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/search.css') }}">#}
+{#    <div class="form-container">#}
+{#        <form method="get" action="/search" class="navbar-form navbar-left">#}
+{#            <div class="form-group">#}
+{#                <input type="text" class="form-control" placeholder="Search" name="userInput">#}
+{#            </div>#}
+{#            <button type="submit" class="btn btn-default">Submit</button>#}
+{#        </form>#}
+{#    </div>#}
+{##}
+{#{% endblock %}#}

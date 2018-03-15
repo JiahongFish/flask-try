@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Search{% endblock %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/pagination.css') }}">
+
+
+{% block main %}
+    {{ pagination.info }}
+    <div class="form-container bgc">
+        {% for ids in pass_res %}
+            <form action="/result" method="GET">
+                <a href="{{ ids }}" name="click" target="_blank">This is No.{{ ids }} document</a>
+            </form>
+
+        {% endfor %}
+
+    </div>
+    {{ pagination.links }}
+{% endblock %}
